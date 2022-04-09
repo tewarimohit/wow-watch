@@ -1,0 +1,57 @@
+.page-container {
+	position: relative;
+	display: grid;
+	color: var(--ecom-login-bdr);
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 10px;
+
+	grid-template-areas:
+		" head head head head head"
+		" ---- info info info info"
+		" side content content  content content"
+		" footer footer footer footer footer";
+}
+
+.page-header {
+	grid-area: head;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	color: white;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.side-bar {
+	grid-area: side;
+	display: flex;
+	justify-content: flex-start;
+	z-index: 0;
+}
+
+.info {
+	grid-area: info;
+	display: flex;
+	align-items: center;
+	
+}
+
+.page-content {
+	grid-area: content;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	
+}
+
+.footer {
+	background-color: red;
+	grid-area: footer;
+}
+
+.user-image {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--primary-colorone);
+}
