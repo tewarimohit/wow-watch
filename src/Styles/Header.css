@@ -36,3 +36,15 @@
 .header-icons {
 	margin-right: 10px;
 }
+
+.login-color {
+	background-color: #f5fffa;
+	border: none;
+	color: var(--bg-color-header);
+}
+.link:hover {
+	cursor: pointer;
+}
+.title{
+	color:var(--primary-colorone)
+}
