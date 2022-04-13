@@ -13,7 +13,7 @@ const VideoCard = ({ video }) => {
 	const navigate = useNavigate();
 	const { likedVideos, setLikedVideos } = useLikedVideos();
 	const { watchLater, setWatchLater } = useWatchLater();
-	console.log(typeof (navigate) );
+	
 	return (
 		<div className="card card-shadow">
 			<div className="card-header card-image card-one" id={video.id}>

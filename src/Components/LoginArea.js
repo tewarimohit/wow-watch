@@ -20,7 +20,7 @@ const LoginArea = () => {
 	};
 
 	const userLoginHandler = async (email, password) => {
-		console.log(email, password);
+		
 		try {
 			const response = await axios.post("/api/auth/login", {
 				email,
@@ -69,7 +69,7 @@ const LoginArea = () => {
 					Password
 				</label>
 				<input
-					class="input-field normal-input margin-bottom-m"
+					className="input-field normal-input margin-bottom-m"
 					type="Password"
 					value={userLogin.password}
 					name="password"

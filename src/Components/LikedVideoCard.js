@@ -6,7 +6,7 @@ import { useLikedVideos } from "../Context/LikedVideosContext";
 
 const LikedVideoCard = () => {
 	const { likedVideos, setLikedVideos } = useLikedVideos();
-	console.log(likedVideos);
+	
 	return (
 		<>
 			{likedVideos.map(each => {
