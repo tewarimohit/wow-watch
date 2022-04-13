@@ -4,3 +4,13 @@
 .icons {
 	color: var(--normal-dark);
 }
+.icons:hover {
+	cursor: pointer;
+}
+.card-header.card-image.card-one > img {
+	margin-top: 0;
+}
+.all-icon {
+	justify-content: center;
+	align-items: center;
+}

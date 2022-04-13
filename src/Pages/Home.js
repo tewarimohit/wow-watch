@@ -3,10 +3,10 @@ import "../Styles/Home.css";
 import Header from "../Components/Header";
 import Sidebar from "../Components/Sidebar";
 import VideoCard from "../Components/VideosCard";
-
+import { useVideos } from "../Context/videoContext";
 
 const Home = () => {
-	
+	const { videos } = useVideos();
 
 	return (
 		<div className="page-container">
@@ -20,7 +20,9 @@ const Home = () => {
 				<h1 className="std-font-two hd-m-font">Recommended</h1>
 			</div>
 			<div className="page-content">
-				<VideoCard />
+				{videos.map(video => (
+					<VideoCard key={video.id} video={video} />
+				))}
 			</div>
 			<div className="footer"></div>
 		</div>
